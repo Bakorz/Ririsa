@@ -1,0 +1,199 @@
+@font-face {
+    font-family: futura-light;
+    src: url(resource/futura-light-bt.ttf);
+}
+
+.pink-font {
+    color: #ea7cae;
+}
+
+.blue-font {
+    color: #38b7f0;
+}
+
+body {
+    font-family: futura;
+    margin: 0;
+}
+
+
+
+ul {
+    list-style-type: none;
+    line-height: 0.6;
+    padding-left: 0;
+}
+
+
+.border-image {
+    border:darkslateblue;
+    border-style: solid;
+    border-width: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
+    background-color: transparent;
+    width: 100%; /* Lebar diatur sesuai kontainer atau sesuai layout */
+    max-width: 15vw; /* Tentukan batas lebar maksimal */
+    display: block; /* Pastikan mereka tampil sebagai blok */
+    margin: 0 auto; /* Center elemen di dalam list item */
+    cursor: grab;
+}
+
+.border-name {
+    border: darkslateblue;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%; /* Lebar diatur sesuai kontainer atau sesuai layout */
+    max-width: 15vw; /* Tentukan batas lebar maksimal */
+    display: block; /* Pastikan mereka tampil sebagai blok */
+    margin: 0 auto; /* Center elemen di dalam list item */
+    cursor: grab;
+} 
+
+.border-image:hover {
+    background-color: black;
+}
+
+.border-image:hover + .border-name {
+    background-color: black;
+}
+
+.button {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 30px;
+    padding: 5px;
+    width: 80%;
+    border-color: black;
+    margin-bottom: 20px;
+    font-family: futura;
+    text-align: left;
+    transition-duration: 0.4s;
+    cursor: grab;
+}
+
+.button:hover {
+    background-color: lightgray;
+}
+
+.header {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: futura-bold;
+}
+
+.margin-top + .margin-top {
+    margin-top: 50px;
+}
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+    margin: 0 auto;
+}
+
+.grid-container-1 > div {
+    padding: 20px;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    color: white;
+    background-color: #ffa5ce;
+    margin-top: 100px;
+}
+
+.grid-container-2 > div {
+    background-color: #ffa5ce;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grid-container-2 > div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.grid-container-2 > div:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.grid-container-2 > div:nth-child(3) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.background-gradient {
+    display: grid;
+    background-image: linear-gradient(#c3c5e9, #dab7e5);
+    width: 100%;
+    margin-top: 300px;
+    padding-bottom: 200px;
+}
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px auto auto;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+.grid-container-3-first-row {
+    grid-column: span 6;
+}
+
+.grid-container-3-second-row {
+    grid-column: span 3;
+}
+
+.grid-container-3-third-row {
+    grid-column: span 2;
+}
+
+#icon {
+    vertical-align: middle;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+#story {
+    font-family: futura-light;
+    font-style: italic;
+    padding-left: 200px;
+    padding-bottom: 50px;
+    font-size: 100px;
+    margin: 0;
+}
+
+#storyline {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 30px;
+    margin: 0;
+}
+
+#karakter {
+    text-align: center;
+    color: #857fdf;
+    font-style: italic;
+    font-family: futura-light;
+    font-size: 100px;
+    position: relative;
+    top: -120px; 
+}
