@@ -1,4 +1,4 @@
-<h3>To do list</h3>
+#### To-do list:
 
-<p>1. Make button responsive.</p>
-<p>2. Fix character card</p>
+1. Make button responsive
+2. Fix character card
